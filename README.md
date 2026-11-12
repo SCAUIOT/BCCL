@@ -33,13 +33,13 @@ The detected behaviors include standing (red), lying (green), and eating (blue).
 
 | Day | Night |
 |:---:|:---:|
-| ![Day](show/T2_Day_20250718154900.png) | ![Night](assets/images/detection_night.png) |
+| ![Day](show/T2_Day_20250718154900.png) | ![Night](show/T2_Night_20250718232138.png) |
 
 ### Feeding and Light
 
 | Feeding | Light |
 |:---:|:---:|
-| ![Feeding](assets/images/detection_feeding.png) | ![Light](assets/images/detection_light.png) |
+| ![Feeding](show/T2_Feeding_20250718184814.png) | ![Light](show/T2_Light_20250718201646.png) |
 
 ## Dataset
 
