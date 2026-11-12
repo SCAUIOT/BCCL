@@ -1,0 +1,8 @@
+# Dependency entrypoint, not a verified paper-version lock.
+PyYAML
+requests
+numpy
+pandas
+opencv-python
+ultralytics
+# Install the device-compatible PyTorch/CUDA build separately, especially on Jetson.

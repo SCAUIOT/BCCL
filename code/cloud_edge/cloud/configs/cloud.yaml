@@ -1,0 +1,21 @@
+# Public example paths. Replace them with this server's actual model/data locations.
+# Server-local configuration. Relative paths resolve against THIS YAML's directory.
+experiment: experiment.yaml
+device: "0"
+network:
+  bind_host: 0.0.0.0
+  port: 8800
+  token_env: CLOUD_EDGE_TOKEN
+  require_token: false  # system protocol has no Bearer header; enable on BOTH hosts if needed
+  max_upload_mib: 256
+paths:
+  work_dir: /data/cloud_edgeV1/cloud_runs
+  initial_student: /data/cloud_edgeV1/models/student_yolov8n_behavior.pt
+  teacher: /data/cloud_edgeV1/models/teacher_yolov8l_behavior.pt
+  source_yaml: /data/pig_behavior_dataset/source/data.yaml
+  dataset_root: /data/pig_behavior_dataset
+evaluation:
+  enabled: true
+  names: [T1_Day, T1_Night, T1_Feeding, T1_Light,
+          T2_Day, T2_Night, T2_Feeding, T2_Light,
+          T3_Day, T3_Night, T3_Feeding, T3_Light]

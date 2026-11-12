@@ -1,0 +1,58 @@
+# Copy this shared file to BOTH hosts after changing scientific parameters.
+# Default: Pq=0.2, tau_a=0.2, alpha=0.05. Set tau_a=0.3 here for the old anchor.
+project_name: cloud_edgeV1_v17
+seed: 42
+class_names: {0: stand, 1: lie, 2: eat}
+models:
+  imgsz: 640
+  student_epochs: 10
+  batch: 4
+  workers: 0
+  pseudo_conf: 0.40
+  min_box_area_ratio: 0.00015
+  train_options: {cache: false, plots: false, save_period: -1}
+continuous:
+  sample_every_frames: 25
+  drift_rule: binomial_window
+  short_window_seconds: 300.0
+  warmup_seconds: 1800.0
+  p_low: 0.20
+  alpha: 0.05
+  non_lie_ratio_threshold: 0.20
+  min_frame_gap_seconds: 2.4
+  min_samples_per_drift_window: 20
+  min_batch_images: 100
+  max_batch_images: 200
+  max_collect_seconds: 600.0
+  pending_max_age_seconds: 1800.0
+  short_gap_seconds: 2.0
+  long_gap_seconds: 240.0
+  checkpoint_every_samples: 30
+  update_scratch_gb: 2.0
+storage:
+  max_work_dir_gb: 18.0
+  min_free_disk_gb: 2.0
+  jpeg_quality: 90
+data_mix:
+  mix_mode: source_plus_hard
+  source_sample_count: 80
+  target_repeat: 3
+  target_val_fraction: 0.20
+  min_target_val_images: 20
+update_policy: {shadow_min_gain: 0.0, keep_rejected_models: false}
+model_bank:
+  enabled: true
+  policy: paper
+  top_k: 10
+  prune_strategy: lru
+  store_rejected: false
+  cleanup_candidate_models: true
+  query_on_train_start: true
+  selector: similarity
+  similarity_threshold: null
+  stage_filter: false
+  require_proven: false
+  swap_target_margin: 0.0
+  rejection_fallback: true
+  deploy_competition: false
+  deploy_spare_margin: 0.0

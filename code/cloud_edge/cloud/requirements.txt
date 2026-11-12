@@ -1,0 +1,9 @@
+# Dependency entrypoint, not a verified paper-version lock.
+PyYAML
+Flask
+requests
+numpy
+pandas
+opencv-python
+ultralytics
+# Install the server's matching PyTorch/CUDA build separately.

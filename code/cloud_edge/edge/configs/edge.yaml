@@ -1,0 +1,22 @@
+# Edge-local configuration. Replace cloud_url with the SERVER's reachable LAN IP.
+experiment: experiment.yaml
+device: "0"  # auto, cpu, or the edge's logical CUDA index
+edge:
+  node_id: pig-edge-01
+  ip: 192.168.1.101  # identification only; no inbound connection is required
+  run_id: v17_tau02_seed42
+network:
+  cloud_url: http://192.168.1.100:8800
+  token_env: CLOUD_EDGE_TOKEN
+  require_token: false  # system protocol has no Bearer header; enable on BOTH hosts if needed
+  poll_seconds: 2
+  request_timeout_seconds: 30
+  retry_attempts: 6
+  retry_backoff_seconds: 1
+  max_job_wait_seconds: 172800
+  max_model_mib: 256
+paths:
+  videos_dir: /data/mer_videos
+  work_dir: /data/cloud_edgeV1/edge_runs
+  # Optional matching local initial student. Empty downloads it from the cloud.
+  initial_student: ""
