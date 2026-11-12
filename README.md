@@ -21,7 +21,7 @@ BCCL consists of three main components:
 
 The overall architecture of BCCL is illustrated below.
 
-![BCCL Framework](show/frameworkV2.pdf)
+![BCCL Framework](show/framework.png)
 
 ## Qualitative Results
 
