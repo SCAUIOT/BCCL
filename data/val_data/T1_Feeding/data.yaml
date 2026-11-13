@@ -1,1 +1,13 @@
-
+# Pig Behaviour Dataset -- evaluation stage T03_eat
+# Evaluation-only split: all three keys deliberately point at the same 50 images.
+# `path: .` resolves against the directory holding this file, so the dataset
+# stays portable. Do not replace it with an absolute path.
+path: .
+train: images/test
+val: images/test
+test: images/test
+nc: 3
+names:
+  0: stand
+  1: lie
+  2: eat
