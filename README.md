@@ -55,7 +55,7 @@ Due to the large volume of the original video dataset, only a representative sub
 
 Additional data may be available from the corresponding author upon reasonable request, subject to applicable data-sharing permissions and restrictions.
 
-**Contact:** Ling Yin (yin_ling@scau.edu.cn)
+**Contact:** Zhenhua Ye (yezhenhua@stu.scau.edu.cn)
 
 ## Experimental Results
 
@@ -90,7 +90,7 @@ The complete citation information will be added after publication.
 
 For questions regarding the code, dataset, or paper, please contact:
 
-**Ling Yin**  
+**Zhenhua Ye**  
 South China Agricultural University  
-Email: yin_ling@scau.edu.cn
+Email: yezhenhua@stu.scau.edu.cn
 
