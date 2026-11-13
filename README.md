@@ -3,7 +3,7 @@
 
 **Official implementation for the paper "Edge-Cloud Collaborative Continual Learning in Smart Livestock Monitoring".**
 
-**Authors:** Zusheng Zhang, Zhenhua Ye, Ling Yin, Yinjie Kuang, SuMin Zhang, Rongjin Jiang
+**Authors:** Zusheng Zhang, Zhenhua Ye, Ling Yin, Yinjie Kuang, Sumin Zhang, Rongjin Jiang
 
 ## Overview
 
