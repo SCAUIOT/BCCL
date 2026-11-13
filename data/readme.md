@@ -13,9 +13,11 @@ The publicly released data contain **only a portion of the offline evaluation im
 ```text
 data/
 ├── README.md
-└── T1_Day/
-    ├── images/             # Released evaluation images
-    └── labels/             # Corresponding bounding-box and behavior annotations
+└── val_data/
+    ├── T1_Day/
+        ├── images/             # Released evaluation images
+        └── labels/             # Corresponding bounding-box and behavior annotations
+    ├── T1_Night/
 ```
 
 The experimental datasets described below are larger than the subset available in this repository.
